@@ -81,7 +81,7 @@ const UserPage = ({ userId }: { userId: string }) => {
               aria-label='slider-ex-2'
               colorScheme={data.mannerScore >= 36.5 ? 'cyan' : 'orange'}
               defaultValue={data.mannerScore}
-              max={60}
+              max={99}
               isDisabled>
               <SliderTrack>
                 <SliderFilledTrack />
@@ -91,11 +91,12 @@ const UserPage = ({ userId }: { userId: string }) => {
                 textAlign='center'
                 border='1px solid gray.800'
                 borderRadius='8px'
+                fontSize='sm'
                 bg='blue.500'
                 color='white'
-                mt='3'
-                ml='-7'
-                px='1'
+                mt='2'
+                ml='-6'
+                px='0.5'
                 w='15'>
                 {data.mannerScore} &#8451;
               </SliderMark>
